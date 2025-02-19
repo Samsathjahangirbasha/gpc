@@ -44,6 +44,8 @@ class student extends person
    public int getstudId() {
 	   return studId;
    }
+   @override
+   @Override
    String getrole() {
 	   return "I am a student";
    }
@@ -78,6 +80,7 @@ class teacher extends person
 	public int getexe(){
 		return exe;
 	}
+        @Override
 	String getrole()
 	{
 		return "I am a teacher";
@@ -88,12 +91,14 @@ class seniorteacher extends teacher
   seniorteacher(String name, int age, String sub, int teachId, int exe){
      super(name,age, sub, teachId,exe);
      }
+  @Override
      String getrole(){
     	 return "I am a senior teacher";
      }
 }
 class oops {
     public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner obj=new Scanner(System.in);
 		ArrayList <person> per = new ArrayList<>();
 		System.out.println("enter stud count");
