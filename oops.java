@@ -1,4 +1,4 @@
-package gpc;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 abstract class person{
@@ -92,7 +92,7 @@ class seniorteacher extends teacher
     	 return "I am a senior teacher";
      }
 }
-public class oops {
+class oops {
     public static void main(String[] args) {
 		Scanner obj=new Scanner(System.in);
 		ArrayList <person> per = new ArrayList<>();
